@@ -1,0 +1,178 @@
+:root {
+    font-family: 'Gilroy-Regular';
+    font-size: 1.125rem;
+}
+/* Обнуляем браузерные стили */
+ul {
+    list-style: none;
+}
+*,:before, :after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Кнопки */
+._btn {
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+._btn-primary {
+    background-color: #315EFB;
+}
+._btn-light-primary {
+    background-color: rgba(49, 94, 251, 0.15);
+}
+
+/*Начертания*/
+._fw-700 {
+    font-weight: 700;
+}
+/*Цвета*/
+._bg-primary {
+    background-color: #315EFB;
+}
+._text-white {
+    color: #fff;
+}
+a {
+    color: initial;
+    text-decoration-line: none;
+}
+._container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+._header {
+    display: flex;
+    align-items: center;
+    height: 111px;
+}
+._header-logo {
+    margin-right: 76px;
+}
+._header-menu {
+    display: flex;
+    margin-right: 90px;
+}
+._header-menu li a {
+    border-bottom: 0px solid #315EFB;
+}
+._header-menu li a:hover{
+    border-bottom: 2px solid #315EFB;
+}
+._header-menu li:not(:last-child) {
+    margin-right: 35px;
+}
+._header-sign-in {
+    padding: 1em 2.44em;
+    box-shadow: 0px 9px 30px rgba(49, 94, 251, 0.25);
+}
+._header-select-language {
+    width: 114px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.88em 1.1em;
+    margin-right: 34px;
+    cursor: pointer;;
+}
+._header-select-language img {
+    width: 25px;
+    height: 16px;
+    margin-right: 13px;
+}
+._header-select-language .country {
+    margin-right: 10px;
+}
+._big-block {
+    background-color: #315EFB;
+    font-family: 'Gilroy-Bold';
+    padding-top: 88px;
+    padding-bottom: 96px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+._big-block ._container:before {
+    content: '';
+    background-image: url("src/media/images/points.png");
+    bottom: 70%;
+    left: -110px;
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    filter: invert(10%);
+    z-index: -1;
+}
+._big-block ._container:after {
+    content: '';
+    background-image: url("src/media/images/points.png");
+    bottom: -51px;
+    right: 65px;
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    filter: invert(10%);
+    z-index: -1;
+}
+._big-block h1 {
+    position: relative;
+    font-size: 2.33em;
+    z-index: 2;
+}
+._big-block h1:after {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    left: 15px;
+    display: flex;
+    width: 753px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.19);
+}
+._big-block__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+._big-block__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+._big-block__buttons-from {
+    padding: 1.38em 1.05em;
+    margin-right: 30px;
+}
+._big-block__buttons-from img {
+    width: 36px;
+    height: 36px;
+    margin-right: 21px;
+}
+._big-block__buttons-to {
+    padding: 1.38em 1.05em;
+    margin-right: 30px;
+}
+._big-block__buttons-to img {
+    width: 36px;
+    height: 36px;
+    margin-right: 21px;
+}
+._big-block__buttons-from .money {
+    margin-right: 23px;
+}
+._big-block__buttons-to .money{
+    margin-right: 92px;
+}
+._big-block__buttons-change {
+    background-color: #00C248;
+    padding: 1.769em 6.61em;
+}
